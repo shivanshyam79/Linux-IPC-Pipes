@@ -16,6 +16,7 @@ Write the C Program using Linux Process API - pipe(), fifo()
 Testing the C Program for the desired output.
 
 #### PROGRAM :
+ ```
 DEVELOPED BY : ARUNMOZHI VARMAN T
 REG NO : 212223230022
 C Program that illustrate communication between two process using unnamed pipes using Linux API system calls:
@@ -74,10 +75,11 @@ n=read(rfd,buff,2000);
 buff[n]='\0';
 printf("THE RESULTS OF CLIENTS ARE ...... \n"); write(1,buff,n);
 }
+,,,
 ### OUTPUT :
 ![316734981-e1f8e702-443f-4afa-a311-76cacd67169b](https://github.com/shivanshyam79/Linux-IPC-Pipes/assets/151513860/16d939eb-a982-441b-a1b4-f8aafa1f157f)
 
-
+```
 C Program that illustrate communication between two process using named pipes using Linux API system calls :
 #include <unistd.h>
 #include <stdlib.h>
@@ -89,6 +91,7 @@ int res = mkfifo("/tmp/my_fifo", 0777);
 if (res == 0) printf("FIFO created\n");
 exit(EXIT_SUCCESS);
 }
+,,,
 ### OUTPUT :
 ![316583885-8b754427-2304-4cf5-9298-59730f6fb15e](https://github.com/shivanshyam79/Linux-IPC-Pipes/assets/151513860/8133968a-bd93-4c45-b1f6-0311fd5ba6da)
 
